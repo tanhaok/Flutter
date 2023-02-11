@@ -2,9 +2,15 @@ name: Flutter CI
 
 on:
   push:
-    branches:
-      - master
-
+    branches: ["master"]
+    paths:
+      - "app_02/**"
+  pull_request:
+    branches: ["master"]
+    paths:
+      - "app_02/**"
+  workflow_dispatch:
+    
 jobs:
   build:
     runs-on: ubuntu-latest
