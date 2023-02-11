@@ -2,12 +2,12 @@ name: Flutter CI
 
 on:
   push:
-    branches: ["master"]
+    branches: ["main"]
     paths:
       - "app_02/**"
       - ".github/workflow/app_2.yml"
   pull_request:
-    branches: ["master"]
+    branches: ["main"]
     paths:
       - "app_02/**"
       - ".github/workflow/app_2.yml"
