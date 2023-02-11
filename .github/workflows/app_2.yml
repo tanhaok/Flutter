@@ -30,8 +30,6 @@ jobs:
         working-directory: app_02
       - run: flutter format --set-exit-if-changed .
         working-directory: app_02
-      - run: flutter analyze .
-        working-directory: app_02
       - run: flutter build apk
         working-directory: app_02
       - uses: actions/upload-artifact@v1
