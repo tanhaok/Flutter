@@ -5,10 +5,12 @@ on:
     branches: ["master"]
     paths:
       - "app_02/**"
+      - "github/workflow/app_2.yml"
   pull_request:
     branches: ["master"]
     paths:
       - "app_02/**"
+      - "github/workflow/app_2.yml"
   workflow_dispatch:
     
 jobs:
