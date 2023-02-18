@@ -28,7 +28,7 @@ jobs:
           channel: 'stable'
       - run: flutter pub get
         working-directory: bt_week3
-      - run: flutter format --set-exit-if-changed .
+      - run: dart format --set-exit-if-changed .
         working-directory: bt_week3
       - run: flutter build apk
         working-directory: bt_week3
