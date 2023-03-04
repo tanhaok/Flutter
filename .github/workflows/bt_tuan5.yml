@@ -1,0 +1,53 @@
+name: Flutter CI
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "bt_tuan5/**"
+      - ".github/workflow/bt_tuan5.yml"
+  pull_request:
+    branches: ["main"]
+    paths:
+      - "bt_tuan5/**"
+      - ".github/workflow/bt_tuan5.yml"
+  workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '12.x'
+      - uses: dart-lang/setup-dart@v1
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.7.3'
+          channel: 'stable'
+      - run: flutter pub get
+        working-directory: bt_tuan5
+      - run: flutter format --set-exit-if-changed .
+        working-directory: bt_tuan5
+      - run: flutter build apk
+        working-directory: bt_tuan5
+      - uses: actions/upload-artifact@v1
+        with:
+          name: release-apk
+          path: bt_tuan5/build/app/outputs/apk/release/app-release.apk
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: |
+            Changes in this Release
+            - First Change
+            - Second Change
+          draft: false
+          prerelease: false
+

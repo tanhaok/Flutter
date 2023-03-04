@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "142213387273",
+    "project_id": "bai-tap-tuan-5",
+    "storage_bucket": "bai-tap-tuan-5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142213387273:android:a766f963fc83fecc0f54d8",
+        "android_client_info": {
+          "package_name": "com.example.bt_tuan5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142213387273-9eju28ej10rm68t43rfuh16bacb9bikm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXQbvBG7iynbK93-Wz6HoFP-OnC1teQ_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142213387273-9eju28ej10rm68t43rfuh16bacb9bikm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
