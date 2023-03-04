@@ -66,7 +66,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '142213387273',
     projectId: 'bai-tap-tuan-5',
     storageBucket: 'bai-tap-tuan-5.appspot.com',
-    iosClientId: '142213387273-svr0tqgh00senkd55o2ho0rbiqv0artq.apps.googleusercontent.com',
+    iosClientId:
+        '142213387273-svr0tqgh00senkd55o2ho0rbiqv0artq.apps.googleusercontent.com',
     iosBundleId: 'com.example.btTuan5',
   );
 
@@ -76,7 +77,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '142213387273',
     projectId: 'bai-tap-tuan-5',
     storageBucket: 'bai-tap-tuan-5.appspot.com',
-    iosClientId: '142213387273-svr0tqgh00senkd55o2ho0rbiqv0artq.apps.googleusercontent.com',
+    iosClientId:
+        '142213387273-svr0tqgh00senkd55o2ho0rbiqv0artq.apps.googleusercontent.com',
     iosBundleId: 'com.example.btTuan5',
   );
 }
